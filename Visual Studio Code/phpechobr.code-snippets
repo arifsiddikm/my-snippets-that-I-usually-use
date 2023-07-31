@@ -1,0 +1,9 @@
+{
+	"phpechobr": {
+		"prefix": "phpechobr",
+		"body": [
+		  "echo \"<br>\";"
+		],
+		"description": "phpechobr"
+	  }
+}

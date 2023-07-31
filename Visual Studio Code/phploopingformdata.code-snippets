@@ -1,0 +1,21 @@
+{
+	"phploopingformdata": {
+		"prefix": "phploopingformdata",
+		"body": [
+		  "// Upload multiple files",
+		  "$$countdata  = count($$_POST[\"username\"]);",
+		  "if ($$countdata > 0) {",
+		  "    $$noloop = 1;",
+		  "    for ($$loop = 0; $$loop < $$countdata; $$loop++) {",
+		  "        if (trim($$_POST[\"username\"][$$loop] !== '')) {",
+		  "            $$loop1 = $$loop + 1;",
+		  "            $$username = strip_tags(addslashes(trim($$_POST[\"username\"][$$loop])));",
+		  "          ",
+		  "        }",
+		  "    }",
+		  "}",
+		  "// End Upload multiple files"
+		],
+		"description": "phploopingformdata"
+	  }
+}

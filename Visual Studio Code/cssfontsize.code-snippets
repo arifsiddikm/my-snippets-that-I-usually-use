@@ -1,0 +1,25 @@
+{
+	"cssfontsize": {
+		"prefix": "cssfontsize",
+		"body": [
+		  ".font-1 {font-size:1px !important;} .font-2 {font-size:2px !important;} .font-3 {font-size:3px !important;} .font-4 {font-size:4px !important;} .font-5 {font-size:5px !important;} .font-6 {font-size:6px !important;} .font-7 {font-size:7px !important;} .font-8 {font-size:8px !important;} .font-9 {font-size:9px !important;} .font-10 {font-size:10px !important;} .font-11 {font-size:11px !important;} .font-12 {font-size:12px !important;} .font-13 {font-size:13px !important;} .font-14 {font-size:14px !important;} .font-15 {font-size:15px !important;} .font-16 {font-size:16px !important;} .font-17 {font-size:17px !important;} .font-18 {font-size:18px !important;}  .font-19 {font-size:19px !important;}  .font-20 {font-size:20px !important;} .font-21 {font-size:21px !important;} .font-22 {font-size:22px !important;} .font-23 {font-size:23px !important;} .font-24 {font-size:24px !important;} .font-25 {font-size:25px !important;} .font-26 {font-size:26px !important;} .font-27 {font-size:27px !important;} .font-28 {font-size:28px !important;} .font-29 {font-size:29px !important;} .font-30 {font-size:30px !important;} .font-31 {font-size:31px !important;} .font-32 {font-size:32px !important;} .font-33 {font-size:33px !important;} .font-34 {font-size:34px !important;} .font-35 {font-size:35px !important;} .font-36 {font-size:36px !important;} .font-37 {font-size:37px !important;} .font-38 {font-size:38px !important;} .font-39 {font-size:39px !important;} .font-40 {font-size:40px !important;} "
+		],
+		"description": "cssfontsize"
+	  }
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+}

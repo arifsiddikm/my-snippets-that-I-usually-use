@@ -1,0 +1,22 @@
+{
+	"editdata": {
+		"prefix": "editdata",
+		"body": [
+		  "$(\".table\").on('click','.editdata',function() {",
+		  "  var iddata = $(this).attr('iddata');",
+		  "  var namadata = $(this).attr('namadata');",
+		  "  $.ajax({",
+		  "    url:\"<?= base_url('admin/loadeditproduk'); ?>\",",
+		  "    method:\"POST\",",
+		  "    data:{iddata:iddata},",
+		  "    cache:false,",
+		  "    success:function(response) {",
+		  "      $(\"#modalutama .modal-dialog\").addClass(' modal-dialog-90 ');",
+		  "      $(\"#modalutama .modal-content\").html(response);",
+		  "    }",
+		  "  });",
+		  "});"
+		],
+		"description": "editdata"
+	  }
+}

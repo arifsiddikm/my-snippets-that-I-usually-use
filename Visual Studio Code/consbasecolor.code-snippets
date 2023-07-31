@@ -1,0 +1,9 @@
+{
+	"consbasecolor": {
+		"prefix": "consbasecolor",
+		"body": [
+		  "<?= constant('base_color_${1:1}'); ?>"
+		],
+		"description": "consbasecolor"
+	  }
+}

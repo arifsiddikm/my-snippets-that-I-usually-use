@@ -1,0 +1,9 @@
+{
+	"jsprop": {
+		"prefix": "jsprop",
+		"body": [
+		  "$(\"#idtag\").prop(\"selectedIndex\", 0).val();"
+		],
+		"description": "jsprop"
+	  }
+}

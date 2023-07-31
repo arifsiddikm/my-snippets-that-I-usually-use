@@ -1,0 +1,43 @@
+{
+	"jshapusdata": {
+		"prefix": "jshapusdata",
+		"body": [
+		  "$(\".table\").on('click','.hapusdata',function(){",
+		  "  var iddata = $(this).attr('iddata');",
+		  "  var namadata = $(this).attr('namadata');",
+		  "  Swal.fire({",
+		  "    title: 'Konfirmasi',",
+		  "    html: 'Kamu ingin menghapus data Produk '+namadata+'?',",
+		  "    type: 'question',",
+		  "    showCancelButton: true,",
+		  "    confirmButtonColor: '<?= constant('base_color_1'); ?>',",
+		  "    cancelButtonColor: '<?= constant('base_color_red'); ?>',",
+		  "    confirmButtonText: 'Ya, Lanjutkan',",
+		  "    cancelButtonText: 'Tidak'",
+		  "  }).then((result) => {",
+		  "    if (result.value) {",
+		  "      $.ajax({",
+		  "        url:\"<?= base_url('admin/hapusdata'); ?>\",",
+		  "        method:\"POST\",",
+		  "        data:{",
+		  "          kode:'hapusproduk',",
+		  "          iddata:iddata",
+		  "        },",
+		  "        cache:false,",
+		  "        success:function(data) {",
+		  "          Swal.fire({",
+		  "            title: 'Berhasil',",
+		  "            html: 'Produk '+namadata+' sudah dihapus <i class=\"fa fa-smile-beam\"></i>',",
+		  "            type: 'success',",
+		  "            confirmButtonColor: '<?= constant('base_color_1'); ?>'",
+		  "          });",
+		  "          loadData();",
+		  "        }",
+		  "      });",
+		  "    }",
+		  "  });",
+		  "});"
+		],
+		"description": "jshapusdata"
+	  }
+}

@@ -1,0 +1,9 @@
+{
+	"phpechohr": {
+		"prefix": "phpechohr",
+		"body": [
+		  "echo \"<hr>\";"
+		],
+		"description": "phpechohr"
+	  }
+}

@@ -1,0 +1,9 @@
+{
+	"this": {
+		"prefix": "this",
+		"body": [
+		  "\\$this->${1:load}->${2:view}($3);"
+		],
+		"description": "this"
+	  }
+}

@@ -1,0 +1,9 @@
+{
+	"phpifnotissetsession": {
+		"prefix": "phpifnotissetsession",
+		"body": [
+		  "if(!isset($$_SESSION)) {session_start();}"
+		],
+		"description": "phpifnotissetsession"
+	  }
+}

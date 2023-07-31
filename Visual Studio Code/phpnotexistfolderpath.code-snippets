@@ -1,0 +1,9 @@
+{
+	"phpnotexistfolderpath": {
+		"prefix": "phpnotexistfolderpath",
+		"body": [
+		  "if(!file_exists($$folderPath)) { mkdir($$folderPath, 0777); }"
+		],
+		"description": "phpnotexistfolderpath"
+	  }
+}

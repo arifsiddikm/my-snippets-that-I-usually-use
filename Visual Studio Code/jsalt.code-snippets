@@ -1,0 +1,9 @@
+{
+	"jsalt": {
+		"prefix": "jsalt",
+		"body": [
+		  "echo \"<script>alert('$1');</script>\";"
+		],
+		"description": "jsalt"
+	  }
+}

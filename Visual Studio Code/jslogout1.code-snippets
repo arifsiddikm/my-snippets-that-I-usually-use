@@ -1,0 +1,40 @@
+{
+	"jslogout1": {
+		"prefix": "jslogout1",
+		"body": [
+		  "$(\".logout\").click(function(){",
+		  "  Swal.fire({",
+		  "      title: 'Konfirmasi',",
+		  "      html: 'Kamu ingin logout dari WebMin?',",
+		  "      type: 'question',",
+		  "      showCancelButton: true,",
+		  "      confirmButtonColor: '<?= constant('base_color_1'); ?>',",
+		  "      cancelButtonColor: '<?= constant('base_color_red'); ?>',",
+		  "      confirmButtonText: 'Ya, Lanjutkan',",
+		  "      cancelButtonText: 'Tidak'",
+		  "  }).then((result) => {",
+		  "    if (result.value) {",
+		  "      $.ajax({",
+		  "        url:\"<?= base_url('admin/logout'); ?>\",",
+		  "        method:\"POST\",",
+		  "        data:{},",
+		  "        cache:false,",
+		  "        success:function(data) {",
+		  "          Swal.fire({",
+		  "              title: 'Logout Berhasil',",
+		  "              html: 'Sampai jumpa kembali <i class=\"fa fa-smile-beam\"></i>',",
+		  "              type: 'success',",
+		  "              confirmButtonColor: '<?= constant('base_color_1'); ?>'",
+		  "          });",
+		  "          setTimeout(function(){",
+		  "              document.location.href=\"<?= base_url('admin/login/'); ?>\";",
+		  "          }, 2000);",
+		  "        }",
+		  "      });",
+		  "    }",
+		  "  });",
+		  "});"
+		],
+		"description": "jslogout1"
+	  }
+}

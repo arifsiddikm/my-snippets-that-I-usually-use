@@ -1,0 +1,11 @@
+{
+	"loaddataajax1": {
+		"prefix": "loaddataajax1",
+		"body": [
+			"\\$(\"#$1\").load(\"$2\",{",
+			" $3 ",
+			"},function(response, status, xhr) {if (status == \"success\") {$(\"#loading_window\").css('display','none');}});"
+		],
+		"description": "loaddataajax1"
+	  }
+}
