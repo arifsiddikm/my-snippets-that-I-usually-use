@@ -1,0 +1,37 @@
+{
+	"phpuploadfilexlsx": {
+  "prefix": "phpuploadfilexlsx",
+  "body": [
+    "require_once \"../assets/PHPExcel/Classes/PHPExcel.php\";",
+    "",
+    "if($$_FILES['lampiran']['name']<>\"\") {",
+    "    $$tmpfname = $$_FILES[\"lampiran\"][\"tmp_name\"];",
+    "    $$file_ext0  = explode('.',$$_FILES['lampiran']['name']);",
+    "    $$file_ext 	= strtolower(end($$file_ext0));",
+    "    if($$file_ext!==\"xlsx\") {",
+    "        echo \"error|Oops... Silahkan masukkan file .xlsx\";",
+    "        return false;",
+    "    }",
+    "    else {",
+    "        $$excelReader = PHPExcel_IOFactory::createReaderForFile($$tmpfname);",
+    "        $$excelObj = $$excelReader->load($$tmpfname);",
+    "        $$worksheet = $$excelObj->getSheet(0);",
+    "        $$lastRow = $$worksheet->getHighestRow();",
+    "        if($$lastRow>2000) {",
+    "            echo \"error|Silahkan masukkan file dengan data kurang dari 2000 data\";",
+    "            return false;",
+    "        }",
+    "        else {",
+    "            for ($$row = 2; $$row <= $$lastRow; $$row++) {",
+    "                $$nama = $$worksheet->getCell('A'.$$row)->getValue();",
+    "                // $$tanggal = date('Y-m-d', PHPExcel_Shared_Date::ExcelToPHP($$worksheet->getCell('C'.$$row)->getValue()));",
+    "                // $$jam = PHPExcel_Style_NumberFormat::toFormattedString($$cell1, 'hh:mm');",
+    "",
+    "            }",
+    "        }",
+    "    }",
+    "}"
+  ],
+  "description": "phpuploadfilexlsx"
+}
+}

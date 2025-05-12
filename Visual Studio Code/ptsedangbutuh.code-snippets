@@ -1,12 +1,10 @@
 {
-	"jssettimeout": {
-		"prefix": "jssettimeout",
+	"ptsedangbutuh": {
+		"prefix": "ptsedangbutuh",
 		"body": [
-		  "setTimeout(function() {",
-		  "    $1",
-		  "}, ${2:1000});"
+		  "NamaPT sedang membutuhkan kandidat untuk posisi berikut:"
 		],
-		"description": "jssettimeout"
+		"description": "ptsedangbutuh"
 	  }
 	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 

@@ -1,0 +1,13 @@
+{
+	"jsvalnama": {
+  "prefix": "jsvalnama",
+  "body": [
+    "$('#nama').on('input keyup keydown paste change', function () {",
+    "   let value = $(this).val();",
+    "   value = value.replace(/[^ a-zA-Z0-9\\s]/g, '');",
+    "   $(this).val(value);",
+    "});"
+  ],
+  "description": "jsvalnama"
+}
+}

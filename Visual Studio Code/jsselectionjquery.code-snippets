@@ -1,0 +1,9 @@
+{
+	"jsselectionjquery": {
+		"prefix": "jsselectionjquery",
+		"body": [
+		  "$(\"#${1:idselect}\").val(\"${2:valuenya}\").change();"
+		],
+		"description": "jsselectionjquery"
+	  }
+}

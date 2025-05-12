@@ -1,0 +1,26 @@
+{
+	"phpshortbydate": {
+		"prefix": "phpshortbydate",
+		"body": [
+		  "if(!empty($$shortbydate) && isset($$shortbydate)) { ",
+		  "    $$pecahshortbydate = explode(\" - \",$$shortbydate);",
+		  "    ",
+		  "    $$shortbydatefrom0 = trim($$pecahshortbydate[0]);",
+		  "    $$pecahshortbydatefrom = explode(\"-\",$$shortbydatefrom0);",
+		  "    $$pecahshortbydatefromnew = (int)$$pecahshortbydatefrom[2] - 1 == 0 ? $$pecahshortbydatefrom[2] : $$pecahshortbydatefrom[2] - 1;",
+		  "    $$shortbydatefrom = $$pecahshortbydatefrom[0] . \"-\" . $$pecahshortbydatefrom[1] . \"-\" . sprintf(\"%02s\",$$pecahshortbydatefromnew);",
+		  "    ",
+		  "    $$shortbydateto0 = trim($$pecahshortbydate[1]);",
+		  "    $$pecahshortbydateto = explode(\"-\",$$shortbydateto0);",
+		  "    $$pecahshortbydatetonew = (int)$$pecahshortbydateto[2] + 1 == 0 ? $$pecahshortbydateto[2] : $$pecahshortbydateto[2] + 1;",
+		  "    $$shortbydateto = $$pecahshortbydateto[0] . \"-\" . $$pecahshortbydateto[1] . \"-\" . sprintf(\"%02s\",$$pecahshortbydatetonew);",
+		  "    ",
+		  "    $$whereshortbydate = \" AND (TBLNAME.FIELDNAME >= '$$shortbydatefrom%' AND TBLNAME.FIELDNAME <= '$$shortbydateto%') \";",
+		  "}",
+		  "else { ",
+		  "    $$whereshortbydate = \"\";",
+		  "}"
+		],
+		"description": "phpshortbydate"
+	  }
+}

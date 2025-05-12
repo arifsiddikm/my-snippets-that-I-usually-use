@@ -1,0 +1,9 @@
+{
+	"phpelse": {
+		"prefix": "phpelse",
+		"body": [
+		  "<?php else: ?>"
+		],
+		"description": "phpelse"
+	  }
+}

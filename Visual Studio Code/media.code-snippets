@@ -1,12 +1,12 @@
 {
-	"jssettimeout": {
-		"prefix": "jssettimeout",
+	"media": {
+		"prefix": "media",
 		"body": [
-		  "setTimeout(function() {",
-		  "    $1",
-		  "}, ${2:1000});"
+		  "@media screen and (max-width: ${1:768px}) {",
+		  "    $2",
+		  "}"
 		],
-		"description": "jssettimeout"
+		"description": "media"
 	  }
 	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 

@@ -1,0 +1,9 @@
+{
+	"mfetch": {
+		"prefix": "mfetch",
+		"body": [
+		  "mysqli_fetch_assoc(mysqli_query($$con, \"SELECT $1\"));"
+		],
+		"description": "mfetch"
+	  }
+}

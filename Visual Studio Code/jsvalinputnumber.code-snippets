@@ -1,0 +1,14 @@
+{
+	"jsvalinputnumber": {
+  "prefix": "jsvalinputnumber",
+  "body": [
+    "$(\"$1\").on('input keyup keydown paste change',function() {",
+    "  var thisvalue = $(this).val();",
+    "  var newvalue = thisvalue.replace(/[^0-9]/g, '');",
+    "  newvalue = newvalue.substr(0,16);",
+    "  $(this).val(newvalue);",
+    "});"
+  ],
+  "description": "jsvalinputnumber"
+}
+}

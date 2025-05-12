@@ -1,0 +1,15 @@
+{
+	"phpgetmultipleselection": {
+  "prefix": "phpgetmultipleselection",
+  "body": [
+    "$forpersno = \"\";",
+    "if(isset($_POST[\"forpersno\"])) {",
+    "    $selectedforpersno = $_POST['forpersno'];",
+    "    foreach ($selectedforpersno as $sforpersno) {",
+    "        $forpersno .= strip_tags(addslashes(trim($sforpersno))) . \";\";",
+    "    }",
+    "}"
+  ],
+  "description": "phpgetmultipleselection"
+}
+}

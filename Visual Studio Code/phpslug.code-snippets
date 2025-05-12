@@ -1,0 +1,11 @@
+{
+  "phpslug": {
+  "prefix": "phpslug",
+  "body": [
+    "$$forum_slug = str_replace(str_split('`~!@#$%^&*()-=_+[]\\{}|;\",./<>?: '), '-', strtolower($$judul));",
+    "$$cekslug = $$this->db->query(\"SELECT * FROM tbl_data_forum WHERE judul = '$$judul'\");",
+    "$$forum_slug = $$cekslug->num_rows()>0 ? $$forum_slug . \"-\" . $$cekslug->num_rows() : $$forum_slug;"
+  ],
+  "description": "phpslug"
+}
+}

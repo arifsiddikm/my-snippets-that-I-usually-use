@@ -1,0 +1,9 @@
+{
+	"mnum": {
+		"prefix": "mnum",
+		"body": [
+		  "mysqli_num_rows(mysqli_query($$con, \"SELECT $1\"));"
+		],
+		"description": "mnum"
+	  }
+}

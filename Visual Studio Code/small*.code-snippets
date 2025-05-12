@@ -1,0 +1,9 @@
+{
+	"small*": {
+  "prefix": "small*",
+  "body": [
+    "<small class=\"text-danger\">*</small>"
+  ],
+  "description": "small*"
+}
+}

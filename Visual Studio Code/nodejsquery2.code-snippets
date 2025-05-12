@@ -1,0 +1,9 @@
+{
+	"nodejsquery2": {
+		"prefix": "nodejsquery2",
+		"body": [
+		  "await connection.execute(\"${1:query}\");"
+		],
+		"description": "nodejsquery2"
+	  }
+}

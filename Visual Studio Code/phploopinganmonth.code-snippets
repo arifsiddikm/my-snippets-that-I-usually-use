@@ -1,0 +1,18 @@
+{
+	"phploopinganmonth": {
+	"prefix": "phploopinganmonth",
+	"body": [
+		"<?php",
+		"    $$months = [",
+		"        'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni',",
+		"        'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'",
+		"    ];",
+		"    foreach ($$months as $$index => $$month) {",
+		"        $$selected = $$index + 1 == date(\"m\") ? \"selected\" : \"\";",
+		"        echo \"<option \".$$selected.\" value='\". sprintf(\"%02s\", ($$index + 1)) .\"'>\".$$month.\"</option>\";",
+		"    }",
+		"?>"
+	],
+	"description": "phploopinganmonth"
+	}
+}

@@ -1,0 +1,15 @@
+{
+	"phpqueryyear": {
+		"prefix": "phpqueryyear",
+		"body": [
+		  "<?php",
+		  "    $$dataqueryyear = mysqli_query($$con,\"SELECT DISTINCT DATE_FORMAT(TANGGAL, '%Y') AS YEAR FROM OVERTIME WHERE `STATUS`!='0' ORDER BY TANGGAL DESC\");",
+		  "    while ($$dqueryyear = mysqli_fetch_array($$dataqueryyear)) {",
+		  "        $$selected = $$dqueryyear['YEAR']==date(\"Y\") ? \"selected\" : \"\";",
+		  "        echo '<option '.$$selected.' value=\"'.$$dqueryyear[\"YEAR\"].'\">'.$$dqueryyear[\"YEAR\"].'</option>';",
+		  "    }",
+		  "?>"
+		],
+		"description": "phpqueryyear"
+	  }
+}

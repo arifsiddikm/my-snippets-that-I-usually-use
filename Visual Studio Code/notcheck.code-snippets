@@ -1,0 +1,9 @@
+{
+	"notcheck": {
+  "prefix": "notcheck",
+  "body": [
+    "❌"
+  ],
+  "description": "notcheck"
+}
+}

@@ -1,0 +1,9 @@
+{
+	"phpinclude": {
+		"prefix": "phpinclude",
+		"body": [
+		  "<?php include(\"${1:header.php}\"); ?>"
+		],
+		"description": "phpinclude"
+	  }
+}

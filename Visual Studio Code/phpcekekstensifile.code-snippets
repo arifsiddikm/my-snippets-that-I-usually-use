@@ -1,0 +1,14 @@
+{
+	"phpcekekstensifile": {
+	"prefix": "phpcekekstensifile",
+	"body": [
+		"$$file_ext0  = explode('.',$$_FILES['lampiran']['name']);",
+		"$$file_ext 	= strtolower(end($$file_ext0));",
+		"if($$file_ext!==\"xlsx\" && $$file_ext!==\"xlsx\") {",
+		"    echo \"error|Oops... Silahkan unggah dokumen dengan ekstensi JPG/JPEG/PNG\";",
+		"    return false; ",
+		"}"
+	],
+	"description": "phpcekekstensifile"
+	}
+}

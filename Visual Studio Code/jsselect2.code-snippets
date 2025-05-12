@@ -1,0 +1,14 @@
+{
+	"jsselect2": {
+		"prefix": "jsselect2",
+		"body": [
+		  "$(\"$1\").select2({",
+		  "    allowClear: true",
+		  "    // tags: true",
+		  "    // dropdownParent: $(\"#modalutama\")",
+		  "    // tokenSeparators: [',', ' ']",
+		  "});"
+		],
+		"description": "jsselect2"
+	  }
+}

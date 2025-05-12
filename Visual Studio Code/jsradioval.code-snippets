@@ -1,0 +1,17 @@
+{
+	"jsradioval": {
+		"prefix": "jsradioval",
+		"body": [
+		  "$(\"$1\").on('click change', function(e) {",
+		  "    var value = e.target.value;",
+		  "    if(value==\"\") {",
+		  "",
+		  "    }",
+		  "    else {",
+		  "        ",
+		  "    }",
+		  "});"
+		],
+		"description": "jsradioval"
+	  }
+}

@@ -1,0 +1,13 @@
+{
+	"jsvalusername": {
+  "prefix": "jsvalusername",
+  "body": [
+    "$('#username').on('input keyup keydown paste change', function () {",
+    "   let value = $(this).val();",
+    "   value = value.replace(/[^a-zA-Z0-9]/g, '').toLowerCase();",
+    "   $(this).val(value);",
+    "});"
+  ],
+  "description": "jsvalusername"
+}
+}

@@ -1,12 +1,21 @@
 {
-	"jssettimeout": {
-		"prefix": "jssettimeout",
+	"tablekhi": {
+		"prefix": "tablekhi",
 		"body": [
-		  "setTimeout(function() {",
-		  "    $1",
-		  "}, ${2:1000});"
+		  "<div class=\"table-responsive\">",
+		  "<table class=\"table table-khi\">",
+		  "  <tr>",
+		  "    <td class=\"left\">$1</td>",
+		  "    <td class=\"middle\">:</td>",
+		  "    <td class=\"right\">",
+		  "      $2",
+		  "    </td>",
+		  "  </tr>",
+		  "  $3",
+		  "</table>",
+		  "</div>"
 		],
-		"description": "jssettimeout"
+		"description": "tablekhi"
 	  }
 	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 

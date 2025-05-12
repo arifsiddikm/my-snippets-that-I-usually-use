@@ -1,0 +1,13 @@
+{
+	"phpcookie": {
+		"prefix": "phpcookie",
+		"body": [
+		  "// Add Cookie PHP",
+		  "setcookie(\"cookiename\", $$cookievalue , time() + (86400 * 365), \"/\");",
+		  "",
+		  "// Remove Cookie PHP",
+		  "setcookie(\"cookiename\",\"\",time() - (86400 * 365), \"/\");"
+		],
+		"description": "phpcookie"
+	  }
+}

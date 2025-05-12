@@ -1,0 +1,9 @@
+{
+	"nodejsquery1": {
+		"prefix": "nodejsquery1",
+		"body": [
+		  "const [${1:vartitle}] = await connection.execute(\"${2:query}\");"
+		],
+		"description": "nodejsquery1"
+	  }
+}

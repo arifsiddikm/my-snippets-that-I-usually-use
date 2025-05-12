@@ -1,0 +1,27 @@
+{
+	"phpprocessingregister1": {
+		"prefix": "phpprocessingregister1",
+		"body": [
+		  "$$nama = strip_tags(addslashes(trim($$_POST[\"nama\"]))); ",
+		  "$$username = strip_tags(addslashes(trim($$_POST[\"username\"]))); ",
+		  "$$password = MD5(strip_tags(addslashes(trim($$_POST[\"password\"])))); ",
+		  "// Cek Username Akun Pengguna ",
+		  "$$cek = mysqli_fetch_assoc(mysqli_query($$con, \"SELECT * FROM user WHERE username = '$$username'\"));",
+		  "if($$cek>0) {",
+		  "    echo \"error|Oops... Akun dengan username tersebut sudah terdaftar, silahkan gunakan username yang lain\";",
+		  "    return false;",
+		  "}",
+		  "else {",
+		  "    // Insert ke data user baru ",
+		  "    mysqli_query($$con, \"INSERT INTO user (`nama`,`username`,`password`,`STATUS`,`date_inserted`) VALUES ('$$nama','$$username','$$password','1','$$date_inserted')\");",
+		  "    $$ceklastid = mysqli_fetch_assoc(mysqli_query($$con, \"SELECT MAX(id_user) AS id_user FROM user ORDER BY id_user DESC LIMIT 1\"));",
+		  "    $$id_user = empty($$ceklastid[\"id_user\"]) ? 1 : $$ceklastid[\"id_user\"];",
+		  "    // Buatkan sesi login biar auto login ",
+		  "    $$_SESSION[\"bursakerjasession_login\"] = true; ",
+		  "    $$_SESSION[\"bursakerjasession_id_user\"] = $$id_user; ",
+		  "    echo \"berhasil|Pendaftar Akun sudah selesai, selamat datang \" . $$nama; ",
+		  "}"
+		],
+		"description": "phpprocessingregister1"
+	  }
+}

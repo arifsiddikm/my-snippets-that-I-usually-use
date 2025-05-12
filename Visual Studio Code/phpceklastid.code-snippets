@@ -3,7 +3,7 @@
   "prefix": "phpceklastid",
   "body": [
     "$$ceklastid = mysqli_fetch_assoc(mysqli_query($$con, \"SELECT MAX(${1:idname}) AS ${1:idname} FROM ${2:tablename} ORDER BY ${1:idname} DESC LIMIT 1\"));",
-    "$${1:idname} = empty($$ceklastid[\"${1:idname}\"]) ? 1 : $$ceklastid[\"${1:idname}\"] + 1;"
+    "$${1:idname} = empty($$ceklastid[\"${1:idname}\"]) ? 1 : $$ceklastid[\"${1:idname}\"];"
   ],
   "description": "phpceklastid"
 }

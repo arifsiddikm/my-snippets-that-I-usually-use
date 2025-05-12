@@ -1,0 +1,31 @@
+{
+	"phpprocessinglogin1": {
+		"prefix": "phpprocessinglogin1",
+		"body": [
+		  "$$email = strip_tags(addslashes(trim($$_POST[\"email\"])));",
+		  "$$password = MD5(strip_tags(addslashes(trim($$_POST[\"password\"]))));",
+		  "$$query1 = mysqli_query($$con, \"SELECT * FROM `admin` WHERE `email` = '$$email' AND `STATUS` = '1' LIMIT 1\");",
+		  "// Cek Email",
+		  "$$cekemail = mysqli_num_rows($$query1);",
+		  "if($$cekemail>0) {",
+		  "    $$data = mysqli_fetch_assoc($$query1);",
+		  "    // Cek Password ",
+		  "    if($$password !== $$data[\"password\"]) {",
+		  "        echo \"error|Password salah, silahkan coba lagi \";",
+		  "    }",
+		  "    else {",
+		  "        // Set session login admin ",
+		  "        $$_SESSION[\"adsideasession_login_admin\"] = true;",
+		  "        $$_SESSION[\"adsideasession_id_admin\"] = $$data[\"id_admin\"]; ",
+		  "        // Show Success Alert ",
+		  "        echo \"berhasil|Login berhasil, selamat datang \" . ucwords($$data[\"nama\"]);",
+		  "    }",
+		  "}",
+		  "else {",
+		  "    // Show Error Alert ",
+		  "    echo \"error|Akun tidak ditemukan, silahkan coba lagi\";",
+		  "}"
+		],
+		"description": "phpprocessinglogin1"
+	  }
+}

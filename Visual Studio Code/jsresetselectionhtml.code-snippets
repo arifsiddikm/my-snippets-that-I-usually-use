@@ -1,0 +1,10 @@
+{
+	"jsresetselectionhtml": {
+		"prefix": "jsresetselectionhtml",
+		"body": [
+		  "const $$select = document.querySelector('#$1');",
+		  "$$select.value = '';"
+		],
+		"description": "jsresetselectionhtml"
+	  }
+}

@@ -1,0 +1,9 @@
+{
+	"mquery": {
+		"prefix": "mquery",
+		"body": [
+		  "mysqli_query($$con, \"$1\");"
+		],
+		"description": "mquery"
+	  }
+}

@@ -1,0 +1,10 @@
+{
+	"phpceklastidci": {
+	"prefix": "phpceklastidci",
+	"body": [
+	  "$$ceklastid = $$this->db->query(\"SELECT MAX(${1:idname}) AS ${1:idname} FROM ${2:tablename} ORDER BY ${1:idname} DESC LIMIT 1\")->row_array();",
+	  "$${1:idname} = empty($$ceklastid[\"${1:idname}\"]) ? 1 : $$ceklastid[\"${1:idname}\"] + 1;"
+	],
+	"description": "phpceklastidci"
+  }
+  }

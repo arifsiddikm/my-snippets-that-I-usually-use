@@ -1,0 +1,37 @@
+{
+	"phpuploadfilemultiple": {
+		"prefix": "phpuploadfilemultiple",
+		"body": [
+		  "// processing awal ",
+		  "$$lampiran = \"\";",
+		  "if($$_FILES['lampiran']['name']<>\"\") {",
+		  "    $$uniqid = uniqid().date('YmdHis');",
+		  "    $$countdata  = count($$_FILES[\"lampiran\"][\"name\"]);",
+		  "    for ($$i = 0; $$i <= $$countdata; $$i++) {",
+		  "        if (!empty(trim($$_FILES[\"lampiran\"][\"name\"][$$i]))) {",
+		  "            $$nameLampiran1 = addslashes(str_replace(str_split(\"#~=`!@#$%^&*()-_+;:'[]{}\\|<>/?\"), \"\", $$_FILES['lampiran']['name'][$$i])); ",
+		  "            $$extfp1 = pathinfo($$nameLampiran1, PATHINFO_EXTENSION);",
+		  "            $$lampiran0 = $$uniqid.$$i.'.'.$$extfp1;",
+		  "            $$lampiran .= $$lampiran0.\";\";",
+		  "        }",
+		  "    }",
+		  "}",
+		  "",
+		  "// cek last id ",
+		  "if($$_FILES['lampiran']['name']<>\"\") {",
+		  "    $$target_dir = \"./lokasi/\".$$idnyaaaa.\"/\";   ",
+		  "    if (!file_exists($$target_dir)) {mkdir($$target_dir, 0777, true);}",
+		  "    // upload file",
+		  "    for ($$j = 0; $$j <= $$countdata; $$j++) {",
+		  "        if (!empty(trim($$_FILES[\"lampiran\"][\"name\"][$$j]))) {",
+		  "            $$nameLampiran2 = addslashes(str_replace(str_split(\"#~=`!@#$%^&*()-_+;:'[]{}\\|<>/?\"), \"\", $$_FILES['lampiran']['name'][$$j]));",
+		  "            $$extfp2 = pathinfo($$nameLampiran2, PATHINFO_EXTENSION);",
+		  "            $$lampiran = $$uniqid.$$j.'.'.$$extfp2;",
+		  "            move_uploaded_file($$_FILES['lampiran']['tmp_name'][$$j], $$target_dir.$$lampiran);",
+		  "        }",
+		  "    }",
+		  "}"
+		],
+		"description": "phpuploadfilemultiple"
+	  }
+}

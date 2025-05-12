@@ -1,0 +1,11 @@
+{
+	"phpyearlooping": {
+		"prefix": "phpyearlooping",
+		"body": [
+		  "<?php for ($$i=date('Y'); $$i >= 2023; $$i--) { ?>",
+		  "  <option <?= $$i == date(\"Y\") ? \"selected\" : \"\"; ?> value=\"<?= $$i; ?>\"><?= $$i; ?></option>",
+		  "<?php } ?>"
+		],
+		"description": "phpyearlooping"
+	  }
+}
