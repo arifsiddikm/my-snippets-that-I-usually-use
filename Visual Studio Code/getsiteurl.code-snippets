@@ -1,0 +1,9 @@
+{
+	"getsiteurl": {
+		"prefix": "getsiteurl",
+		"body": [
+		  "<?= get_site_url($1); ?>"
+		],
+		"description": "getsiteurl"
+	}
+}

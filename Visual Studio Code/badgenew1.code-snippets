@@ -1,0 +1,9 @@
+{
+	"badgenew1": {
+		"prefix": "badgenew1",
+		"body": [
+		  "<span class=\"badge badge-danger\" style=\"height: 0%;color: white !important;font-size: 11px;\"><i class=\"fa fa-bell animated infinite swing\" style=\"color:white;font-size: 11px;\"></i> New</span>"
+		],
+		"description": "badgenew1"
+	  }
+}

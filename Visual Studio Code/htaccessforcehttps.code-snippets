@@ -1,0 +1,12 @@
+{
+	"htaccessforcehttps": {
+		"prefix": "htaccessforcehttps",
+		"body": [
+		  "# Force HTTPS Website URL",
+		  "# RewriteCond %{HTTPS} off",
+		  "# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]",
+		  "# End Force HTTPS Website URL"
+		],
+		"description": "htaccessforcehttps"
+	  }
+}

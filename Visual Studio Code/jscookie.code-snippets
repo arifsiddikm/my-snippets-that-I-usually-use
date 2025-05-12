@@ -1,0 +1,37 @@
+{
+	"jscookie": {
+  "prefix": "jscookie",
+  "body": [
+    "// Add Cookie JavaScript ",
+    "document.cookie = \"name=value; path=/;\";",
+    "",
+    "// Remove Cookie JavaScript ",
+    "document.cookie = \"name=; expires=Thu, 01 Jan 1000 00:00:00 UTC; path=/;\";",
+    "",
+    "// Set a Cookie",
+    "function setCookie(cName, cValue, expDays) {",
+    "    let date = new Date();",
+    "    date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));",
+    "    const expires = \"expires=\" + date.toUTCString();",
+    "    document.cookie = cName + \"=\" + cValue + \"; \" + expires + \"; path=/\";",
+    "}",
+    "// Apply setCookie",
+    "setCookie('username', username, 30);",
+    "",
+    "// Set a Cookie",
+    "var expDays = 30; ",
+    "let date = new Date();",
+    "date.setTime(date.getTime() + (expDays * 24 * 60 * 60 * 1000));",
+    "const expires = \"expires=\" + date.toUTCString();",
+    "document.cookie = \"sembunyikanpopupsmap=yes; \" + expires + \"; path=/\";",
+    "",
+    "// cookie with domain, subdomain, etc ",
+    "var domain = \"pipefondation.krakataupipe.com\"; // Domain utama",
+    "var expires = new Date();",
+    "expires.setTime(expires.getTime() + (86400 * 1 * 1000)); // 1hari",
+    "var cookieString = \"cookieName=cookieValue; expires=\" + expires.toUTCString() +\"; path=/\" +\"; domain=\" + domain +\"; secure; SameSite=Strict\";",
+    "document.cookie = cookieString;"
+  ],
+  "description": "jscookie"
+}
+}

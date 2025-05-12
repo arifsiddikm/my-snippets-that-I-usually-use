@@ -1,0 +1,12 @@
+{
+	"jspropcheckbox": {
+		"prefix": "jspropcheckbox",
+		"body": [
+		  "// Check",
+		  "$(\"#checkbox\").prop(\"checked\", true);",
+		  "// Uncheck",
+		  "$(\"#checkbox\").prop(\"checked\", false);"
+		],
+		"description": "jspropcheckbox"
+	  }
+}

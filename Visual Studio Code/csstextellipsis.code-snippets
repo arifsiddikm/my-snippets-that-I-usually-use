@@ -1,0 +1,9 @@
+{
+	"csstextellipsis": {
+		"prefix": "csstextellipsis",
+		"body": [
+		  "white-space: nowrap;overflow: hidden;text-overflow: ellipsis;"
+		],
+		"description": "csstextellipsis"
+	  }
+}

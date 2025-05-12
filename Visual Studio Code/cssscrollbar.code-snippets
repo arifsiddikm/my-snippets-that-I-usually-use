@@ -1,0 +1,22 @@
+{
+	"cssscrollbar": {
+  "prefix": "cssscrollbar",
+  "body": [
+    ".boxPilihTemplateCV::-webkit-scrollbar {",
+    "  width: 8px; /* Lebar scrollbar */",
+    "}",
+    ".boxPilihTemplateCV::-webkit-scrollbar-thumb {",
+    "  background-color: rgba(0, 0, 0, 0.5); /* Warna thumb dengan transparansi */",
+    "  border-radius: 5px; /* Sudut melengkung seperti default di macOS */",
+    "}",
+    ".boxPilihTemplateCV::-webkit-scrollbar-thumb:hover {",
+    "  background-color: rgba(0, 0, 0, 0.6); /* Warna thumb saat hover */",
+    "  width:10px;",
+    "}",
+    ".boxPilihTemplateCV::-webkit-scrollbar-track {",
+    "  background:#eee;",
+    "}"
+  ],
+  "description": "cssscrollbar"
+}
+}

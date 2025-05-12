@@ -1,13 +1,18 @@
 {
-	"jsdocready": {
-		"prefix": "jsdocready",
+	"jscheckboxonchange": {
+		"prefix": "jscheckboxonchange",
 		"body": [
-		  "$(document).ready(function() {",
-		  "  $1",
+		  "\\$(\"$1\").on('change',function(){",
+		  "    if(\\$('$2').prop('checked')) {",
+		  "        $3",
+		  "    }",
+		  "    else {",
+		  "        $4",
+		  "    }",
 		  "});"
 		],
-		"description": "jsdocready"
-	}
+		"description": "jscheckboxonchange"
+	  }
 	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 

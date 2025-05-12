@@ -14,7 +14,7 @@
 		  "  method:\"POST\",",
 		  "  data:$2,",
 		  "  cache:false,",
-		  "  success:function(data) {",
+		  "  success:function(response) {",
 		  "    $3",
 		  "  }",
 		  "});"

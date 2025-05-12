@@ -1,0 +1,22 @@
+{
+	"jspopup": {
+  "prefix": "jspopup",
+  "body": [
+    "$(\"$1\").on('click', function(){",
+    "    $(\"#modalutama .modal-dialog\").attr(\"class\",\"modal-dialog\");",
+    "    $(\"#modalutama .modal-content\").html(\"\");",
+    "    $.ajax({",
+    "        url:\"$2\",",
+    "        method:\"POST\",",
+    "        data:{$3},",
+    "        cache:false,",
+    "        success:function(response) {",
+    "            // $4$(\"#modalutama .modal-dialog\").addClass(\" modal-dialog-35 \");",
+    "            $(\"#modalutama .modal-content\").html(response)",
+    "        }",
+    "    });",
+    "});"
+  ],
+  "description": "jspopup"
+}
+}

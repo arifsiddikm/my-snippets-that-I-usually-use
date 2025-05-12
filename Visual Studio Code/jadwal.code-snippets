@@ -1,0 +1,41 @@
+{
+	"jadwal": {
+		"prefix": "jadwal",
+		"body": [
+		  "senin",
+		  "- share loker",
+		  "- ",
+		  "- kerja ",
+		  "",
+		  "selasa ",
+		  "- share loker",
+		  "- ",
+		  "- kerja ",
+		  "",
+		  "rabu ",
+		  "- share loker",
+		  "- ",
+		  "- kerja ",
+		  "",
+		  "kamis ",
+		  "- share loker",
+		  "- ",
+		  "- kerja ",
+		  "",
+		  "jumat ",
+		  "- share loker",
+		  "- ",
+		  "- kerja ",
+		  "",
+		  "sabtu ",
+		  "- share loker",
+		  "- ",
+		  "",
+		  "minggu ",
+		  "- share loker",
+		  "- ",
+		  ""
+		],
+		"description": "jadwal"
+	  }
+}

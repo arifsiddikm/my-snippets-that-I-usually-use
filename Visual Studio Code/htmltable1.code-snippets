@@ -1,0 +1,41 @@
+{
+	"htmltable1": {
+		"prefix": "htmltable1",
+		"body": [
+		  "<div class=\"table-responsive\">",
+		  "    <table class=\"table table-bordered\" id=\"table\">",
+		  "        <thead>",
+		  "            <tr class=\"tr-sistem\">",
+		  "                <th class=\"text-center\" style=\"width: 1%;\">#</th>",
+		  "                <th>Judul</th>",
+		  "                <th class=\"text-center\" style=\"width: 15%;\">Aksi</th>",
+		  "            </tr>",
+		  "        </thead>",
+		  "        <tbody>",
+		  "            <?php",
+		  "                $$no=1;",
+		  "                foreach($$datanya as $$data):",
+		  "                    $$noo=$$no++;",
+		  "            ?>",
+		  "            <tr>",
+		  "                <td><?= $$noo; ?></td>",
+		  "                <td>Judul</td>",
+		  "                <td class=\"text-center\">",
+		  "                    ",
+		  "                </td>",
+		  "            </tr>",
+		  "            <?php endforeach; ?>",
+		  "        </tbody>",
+		  "    </table>",
+		  "</div>",
+		  "<script>",
+		  "    $('#table').dataTable({",
+		  "        aLengthMenu:[[10,25,50,100,250,500,1000,-1],[10,25,50,100,250,500,1000,'All']],",
+		  "        responsive: true",
+		  "        // order:[[0, 'DESC']]",
+		  "    });",
+		  "</script>"
+		],
+		"description": "htmltable1"
+	  }
+}

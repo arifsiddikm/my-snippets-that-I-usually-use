@@ -1,13 +1,14 @@
 {
-	"jsdocready": {
-		"prefix": "jsdocready",
+	"cssimgfullobject": {
+		"prefix": "cssimgfullobject",
 		"body": [
-		  "$(document).ready(function() {",
-		  "  $1",
-		  "});"
+		  "width: 100%;",
+		  "height: 100%;",
+		  "object-fit: cover;",
+		  "object-position: center;"
 		],
-		"description": "jsdocready"
-	}
+		"description": "cssimgfullobject"
+	  }
 	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 

@@ -1,0 +1,9 @@
+{
+	"jsmask": {
+		"prefix": "jsmask",
+		"body": [
+		  "$(\"$1\").mask('000,000,000,000', {reverse: true});"
+		],
+		"description": "jsmask"
+	  }
+}

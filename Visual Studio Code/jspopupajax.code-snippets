@@ -1,0 +1,21 @@
+{
+	"jspopupajax": {
+		"prefix": "jspopupajax",
+		"body": [
+		  "$(\".$1\").on('click',function(){",
+		  "    $.ajax({",
+		  "        url:\"<?= $$base_url; ?>$2\",",
+		  "        method:\"POST\",",
+		  "        data:{",
+		  "            kode:\"$1\"",
+		  "        },",
+		  "        cache:false,",
+		  "        success:function(response) {",
+		  "            $(\"#modalutama .modal-content\").html(response); ",
+		  "        }",
+		  "    });",
+		  "});"
+		],
+		"description": "jspopupajax"
+	  }
+}

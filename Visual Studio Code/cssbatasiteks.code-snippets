@@ -1,0 +1,15 @@
+{
+	"cssbatasiteks": {
+		"prefix": "cssbatasiteks",
+		"body": [
+			"/* Batasi teks hingga 3 baris */",
+			"display: -webkit-box !important;",
+			"-webkit-line-clamp: 3 !important;",
+			"-webkit-box-orient: vertical !important;",
+			"overflow: hidden !important;",
+			"text-overflow: ellipsis !important;",
+			"margin: 0 !important;"
+		],
+		"description": "cssbatasiteks"
+	}
+}

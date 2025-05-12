@@ -1,13 +1,27 @@
 {
-	"jsdocready": {
-		"prefix": "jsdocready",
+	"jqueryformsubmit": {
+		"prefix": "jqueryformsubmit",
 		"body": [
-		  "$(document).ready(function() {",
-		  "  $1",
+		  "\\$(\"form#${1:data}\").submit(function(event) {",
+		  "  \\$(\"#loading_window\").css('display','flex');",
+		  "  event.preventDefault();",
+		  "  \\$.ajax({",
+		  "    url: \"${2:URL}\",",
+		  "    type: \"POST\",",
+		  "    data: new FormData(this),",
+		  "    async: true,",
+		  "    cache: true,",
+		  "    contentType: false,",
+		  "    processData: false,",
+		  "    success: function(status) {",
+		  "      \\$(\"#loading_window\").css('display','flex');",
+		  "      $3",
+		  "    }",
+		  "  });",
 		  "});"
 		],
-		"description": "jsdocready"
-	}
+		"description": "jqueryformsubmit"
+	  }
 	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 

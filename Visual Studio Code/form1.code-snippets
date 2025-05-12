@@ -1,0 +1,9 @@
+{
+	"form1": {
+		"prefix": "form1",
+		"body": [
+		  "<form method=\"POST\" id=\"formtambahdata\" enctype=\"multipart/form-data\">$1</form>"
+		],
+		"description": "form1"
+	  }
+}

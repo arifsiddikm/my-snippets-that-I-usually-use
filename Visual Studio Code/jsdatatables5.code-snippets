@@ -1,13 +1,14 @@
 {
-	"jsdocready": {
-		"prefix": "jsdocready",
+	"jsdatatables5": {
+		"prefix": "jsdatatables5",
 		"body": [
-		  "$(document).ready(function() {",
-		  "  $1",
+		  "$('#tbl5').dataTable({",
+		  "  aLengthMenu:[g[5,10,25,50,100,250,500,1000,-1],[5,10,25,50,100,250,500,1000,'All']],",
+		  "  order:[0,\"desc\"]",
 		  "});"
 		],
-		"description": "jsdocready"
-	}
+		"description": "jsdatatables5"
+	  }
 	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 

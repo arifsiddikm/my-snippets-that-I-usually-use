@@ -1,0 +1,17 @@
+{
+	"jsmaxlengthinputnumber": {
+		"prefix": "jsmaxlengthinputnumber",
+		"body": [
+		  "$(function() {",
+		  "    $('$1').on('mouseup keyup', function () {",
+		  "		var panjang=$(this).val().length;",
+		  "		if(panjang>3) {",
+		  "			var nlai=$(this).val().substring(0,3);",
+		  "			$(this).val(nlai);",
+		  "		}",
+		  "    });",
+		  "});"
+		],
+		"description": "jsmaxlengthinputnumber"
+	  }
+}

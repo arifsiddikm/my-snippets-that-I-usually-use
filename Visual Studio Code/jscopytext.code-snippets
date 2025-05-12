@@ -1,0 +1,17 @@
+{
+	"jscopytext": {
+  "prefix": "jscopytext",
+  "body": [
+    "// $(\".table\").on('click','.copyformurl',function(){",
+    "$(\".copyformurl\").on('click',function(){",
+    "    var idform = $(this).attr('idform'); ",
+    "    var sourceText = document.getElementById(\"copysource\"+idform);",
+    "    sourceText.select();",
+    "    sourceText.setSelectionRange(0, 99999); // For mobile devices",
+    "    document.execCommand(\"copy\");",
+    "    Swal.fire('Berhasil','URL Formulir tersalin: ' + sourceText.value ,'success');",
+    "});"
+  ],
+  "description": "jscopytext"
+}
+}

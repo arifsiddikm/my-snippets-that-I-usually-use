@@ -1,0 +1,9 @@
+{
+	"check": {
+  "prefix": "check",
+  "body": [
+    "✅"
+  ],
+  "description": "check"
+}
+}

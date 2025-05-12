@@ -1,13 +1,13 @@
 {
-	"jsdocready": {
-		"prefix": "jsdocready",
+	"jsonclick": {
+		"prefix": "jsonclick",
 		"body": [
-		  "$(document).ready(function() {",
-		  "  $1",
+		  "\\$(\"#${1:ButtonID}\").on('click',function(){",
+		  "    $2",
 		  "});"
 		],
-		"description": "jsdocready"
-	}
+		"description": "jsonclick"
+	  }
 	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
 	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
 	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
